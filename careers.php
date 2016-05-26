@@ -48,7 +48,7 @@ function careers_post_type() {
 		'show_ui'               => true,
 		'show_in_menu'          => true,
 		'menu_position'         => 5,
-		'menu_icon'             => 'dashicons-yes',
+		'menu_icon'             => 'dashicons-businessman',
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,
@@ -59,4 +59,4 @@ function careers_post_type() {
 	);
 	register_post_type( 'careers', $args );
 }
-add_action( 'init', 'Grants_post_type', 0 );
+add_action( 'init', 'careers_post_type', 0 );
